@@ -4,11 +4,40 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        TriangleNumberCalculator calc = new TriangleNumberCalculator();
+
+        // Example: calculate some triangular numbers
+        System.out.println("Small Number");
+        int n = 4;
+        int m = 2;
+
+        System.out.println("Triangular number T(" + n + ") = " + calc.value(n));
+        System.out.println("Triangular number T(" + m + ") = " + calc.value(m));
+        System.out.println("Sum of T(" + n + ") and T(" + m + ") = " + calc.add(n, m));
+        System.out.println("Difference of T(" + n + ") and T(" + m + ") = " + calc.subtract(n, m));
+        System.out.println("\n-----------------------------\n");
+
+        // You can also test other values
+        System.out.println("Second Small Number");
+        int x = 8;
+        int y = 5;
+        System.out.println("Triangular number T(" + x + ") = " + calc.value(x));
+        System.out.println("Triangular number T(" + y + ") = " + calc.value(y));
+        System.out.println("Sum of T(" + x + ") and T(" + y + ") = " + calc.add(x, y));
+        System.out.println("Difference of T(" + x + ") and T(" + y + ") = " + calc.subtract(x, y));
+        System.out.println("\n-----------------------------\n");
+
+            // You can also test other values
+        System.out.println("Larger Numbers");
+        int a = 10;
+        int b = 15;
+        System.out.println("Triangular number T(" + a + ") = " + calc.value(a));
+        System.out.println("Triangular number T(" + b + ") = " + calc.value(b));
+        System.out.println("Sum of T(" + a + ") and T(" + b + ") = " + calc.add(a, b));
+        System.out.println("Difference of T(" + a + ") and T(" + b + ") = " + calc.subtract(a, b));
+        System.out.println("\n-----------------------------");
+        System.out.println("Good Bye");
+        System.out.println("-----------------------------");
     }
 }
